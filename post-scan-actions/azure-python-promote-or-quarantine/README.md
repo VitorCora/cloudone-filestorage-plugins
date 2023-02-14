@@ -40,7 +40,7 @@ After a scan occurs, this example Azure function places clean files in one stora
     az deployment group create \
         --name fss-promote-or-quarantine-plugin-deployment \
         --resource-group $RESOURCE_GROUP_NAME \
-        --template-uri https://raw.githubusercontent.com/trendmicro/cloudone-filestorage-plugins/master/post-scan-actions/azure-python-promote-or-quarantine/template.json \
+        --template-uri https://github.com/VitorCora/cloudone-filestorage-plugins/blob/master/post-scan-actions/azure-python-promote-or-quarantine/template.json?raw=true \
         -p promoteOrQuarantineFunctionName=$FUNCTION_NAME \
         scanningStorageAccountResourceID=$BLOB_STORAGE_ACCOUNT_RESOURCE_ID \
         scanResultTopicResourceID=$SCAN_RESULT_TOPIC_RESOURCE_ID \
